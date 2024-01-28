@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Elysium" parent="Gadget.Theme"/>
+    <style name="Elysium.Splash" parent="Elysium">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+</resources>

@@ -40,6 +40,17 @@ abstract class Configuration<S : Script> internal constructor(
 //                            project.path.replaceFirst(":", "").replace(":", "-")
 //                        )
                     }
+                    sourceSets {
+                        getByName("main") {
+                            java.srcDir("src/main/kotlin")
+                        }
+                        getByName("debug") {
+                            java.srcDir("src/debug/kotlin")
+                        }
+                        getByName("release") {
+                            java.srcDir("src/release/kotlin")
+                        }
+                    }
                     packaging {
                         resources {
                             excludes += "/META-INF/{AL2.0,LGPL2.1}"

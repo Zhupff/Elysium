@@ -18,4 +18,10 @@ dependencyResolutionManagement {
 
 rootProject.name = "Elysium"
 include(":app")
-include(":basic")
+include(
+    ":basic",
+)
+include(
+    ":component-mainpage",
+    ":component-mainpage:mainpage",
+)

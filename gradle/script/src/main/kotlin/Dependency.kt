@@ -26,14 +26,31 @@ class Dependency<S : Script> internal constructor(
     }
 
     fun basic(
-        closure: Basic.() -> Unit = {}
+        closure: Basic.() -> Unit = {},
     ) {
         dependencies.add("implementation", project(":basic"))
         Basic().closure()
     }
 
+    fun component(
+        name: String,
+        closure: Component.() -> Unit = {},
+    ) {
+        dependencies.add("implementation", project(":component-${name}"))
+        Component(name).closure()
+    }
+
 
     inner class Basic internal constructor() {
+    }
+
+
+    inner class Component internal constructor(
+        val name: String,
+    ) {
+        fun sub(subName: String) {
+            dependencies.add("implementation", project(":component-${name}:${subName}"))
+        }
     }
 }
 

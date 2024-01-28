@@ -9,5 +9,8 @@ script {
     dependency {
         basic()
         common()
+        component("mainpage") {
+            sub("mainpage")
+        }
     }
 }

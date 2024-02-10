@@ -1,3 +1,5 @@
+import zhupf.gadget.spi.Spi
+
 plugins {
     id("com.elysium.library")
 }
@@ -7,8 +9,16 @@ script {
         configure()
     }
     dependency {
-        basic()
+        basic {
+            url()
+        }
         common()
         component("mainpage")
+    }
+}
+
+gadgets {
+    Spi {
+        compile()
     }
 }

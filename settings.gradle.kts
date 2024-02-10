@@ -20,6 +20,7 @@ rootProject.name = "Elysium"
 include(":app")
 include(
     ":basic",
+    ":basic:url",
 )
 include(
     ":component-mainpage",

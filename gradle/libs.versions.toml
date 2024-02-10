@@ -56,6 +56,7 @@ gadgetBasic = { group = "zhupf.gadgets", name = "gadget-basic", version.ref = "g
 gadgetBlur = { group = "zhupf.gadgets", name = "gadget-blur", version.ref = "gadget" }
 gadgetLogger = { group = "zhupf.gadgets", name = "gadget-logger", version.ref = "gadget" }
 gadgetMedia = { group = "zhupf.gadgets", name = "gadget-media", version.ref = "gadget" }
+gadgetSpi = { group = "zhupf.gadgets", name = "gadget-spi", version.ref = "gadget" }
 gadgetTheme = { group = "zhupf.gadgets", name = "gadget-theme", version.ref = "gadget" }
 gadgetToast = { group = "zhupf.gadgets", name = "gadget-toast", version.ref = "gadget" }
 gadgetWidget = { group = "zhupf.gadgets", name = "gadget-widget", version.ref = "gadget" }

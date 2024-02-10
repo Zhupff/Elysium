@@ -7,7 +7,9 @@ script {
         configure()
     }
     dependency {
-        basic()
+        basic {
+            url()
+        }
         common()
         component("mainpage") {
             sub("mainpage")

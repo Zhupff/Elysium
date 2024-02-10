@@ -5,6 +5,7 @@ buildscript {
         classpath(libs.gadgetBlur)
         classpath(libs.gadgetLogger)
         classpath(libs.gadgetMedia)
+        classpath(libs.gadgetSpi)
         classpath(libs.gadgetTheme)
         classpath(libs.gadgetToast)
         classpath(libs.gadgetWidget)

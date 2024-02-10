@@ -1,5 +1,6 @@
 import zhupf.gadget.basic.Basic
 import zhupf.gadget.logger.Logger
+import zhupf.gadget.spi.Spi
 import zhupf.gadget.toast.Toast
 import zhupf.gadget.widget.Widget
 
@@ -22,6 +23,10 @@ gadgets {
     }
     Logger {
         logger("api")
+    }
+    Spi {
+        spi("api")
+        compile()
     }
     Toast {
         toast("api")
